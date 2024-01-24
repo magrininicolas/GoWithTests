@@ -8,7 +8,7 @@ const (
 	russian    = "Russian"
 
 	englishPrefix    = "Hello, "
-	portuguesePrefix = "Olá,"
+	portuguesePrefix = "Olá, "
 	frenchPrefix     = "Bonjour, "
 	russianPrefix    = "Privet, "
 )
@@ -30,7 +30,7 @@ func greetingPrefix(language string) (prefix string) {
 	case french:
 		prefix = frenchPrefix
 	case russian:
-		prefix = russian
+		prefix = russianPrefix
 	default:
 		prefix = englishPrefix
 	}
